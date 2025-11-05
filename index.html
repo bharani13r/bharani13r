@@ -1,59 +1,11 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>R. Bharani — Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0f1724; /* deep slate */
-      --card:#0b1220;
-      --muted:#9aa4b2;
-      --accent:#4f46e5;
-      --glass: rgba(255,255,255,0.04);
-      --radius:14px;
-      color-scheme: dark;
-    }
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; background:linear-gradient(180deg,var(--bg),#071027 120%); color:#e6eef8; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
-    .container{max-width:980px;margin:36px auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;gap:14px;align-items:center}
-    .avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;color:white;box-shadow:0 6px 18px rgba(79,70,229,0.18)}
-    h1{margin:0;font-size:22px}
-    p.lead{color:var(--muted);margin:4px 0 0;font-size:14px}
-    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}.hero{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:26px}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:20px;box-shadow:0 6px 24px rgba(2,6,23,0.6)}
-
-.intro h2{margin:0 0 8px;font-size:20px}
-.intro p{color:var(--muted);line-height:1.5;margin:0}
-.contacts{display:flex;flex-direction:column;gap:10px;margin-top:12px}
-.contact-row{display:flex;align-items:center;gap:12px;color:var(--muted)}
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;font-weight:700;text-decoration:none}
-
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
-.section-title{font-weight:700;margin-bottom:8px}
-.swot p{margin:8px 0;color:var(--muted);font-size:14px}
-
-.projects{margin-top:22px}
-.project-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-.project{padding:14px;border-radius:12px;background:var(--glass);border:1px solid rgba(255,255,255,0.03)}
-.project h4{margin:0 0 6px}
-.project p{margin:0;color:var(--muted);font-size:13px}
-
-footer{margin-top:30px;text-align:center;color:var(--muted);font-size:13px}
-
-/* responsive */
-@media (max-width:900px){
-  .hero{grid-template-columns:1fr}
-  nav{display:none}
-  .container{padding:18px}
-  .avatar{width:60px;height:60px}
-}
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -70,90 +22,90 @@ footer{margin-top:30px;text-align:center;color:var(--muted);font-size:13px}
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-    </header><section class="hero">
-  <div class="card intro">
-    <h2>Hi — I’m R. Bharani</h2>
-    <p>I am a motivated first‑year BE student who prefers understanding concepts deeply and applying them practically. I combine curiosity, persistence and planning to solve academic challenges and build reliable foundations for engineering work.</p>
+    </header>
 
-    <div class="about-grid" id="about">
-      <div class="card swot">
-        <div class="section-title">Strengths</div>
-        <p>He is a highly curious learner with strong persistence, always eager to deeply understand concepts. His consistent effort and planning make him a dedicated and motivated student.</p>
+    <section class="hero">
+      <div class="card intro">
+        <h2>Hi — I’m R. Bharani</h2>
+        <p>I am a motivated first-year BE student who prefers understanding concepts deeply and applying them practically. I combine curiosity, persistence and planning to solve academic challenges and build reliable foundations for engineering work.</p>
 
-        <div class="section-title">Weaknesses</div>
-        <p>He sometimes overthinks difficult topics, which affects focus and confidence, and can rely on guidance rather than independent practice.</p>
+        <div class="about-grid" id="about">
+          <div class="card swot">
+            <div class="section-title">Strengths</div>
+            <p>He is a highly curious learner with strong persistence, always eager to deeply understand concepts. His consistent effort and planning make him a dedicated and motivated student.</p>
+
+            <div class="section-title">Weaknesses</div>
+            <p>He sometimes overthinks difficult topics, which affects focus and confidence, and can rely on guidance rather than independent practice.</p>
+          </div>
+
+          <div class="card swot">
+            <div class="section-title">Opportunities</div>
+            <p>He can strengthen communication and technical skills with mini-projects and mock interviews; his curiosity supports future academic growth.</p>
+
+            <div class="section-title">Threats</div>
+            <p>Exam stress and inconsistent revision habits could reduce retention and performance; last-minute preparation may hurt long-term confidence.</p>
+          </div>
+        </div>
+
+        <div class="projects" id="projects">
+          <div class="section-title">Highlighted projects (starter ideas)</div>
+          <div class="project-list">
+            <div class="project">
+              <h4>Mini Motor Lab</h4>
+              <p>Hands-on experiments to visualise motor starting, efficiency and speed control using simple setups.</p>
+            </div>
+            <div class="project">
+              <h4>Regenerative Drone Concept</h4>
+              <p>Prototype idea exploring energy recovery methods (regenerative braking & piezoelectric harvesting).</p>
+            </div>
+            <div class="project">
+              <h4>Portfolio Website</h4>
+              <p>This website — a clean, responsive single-page portfolio to present work and contact details.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="card swot">
-        <div class="section-title">Opportunities</div>
-        <p>He can strengthen communication and technical skills with mini-projects and mock interviews; his curiosity supports future academic growth.</p>
+      <aside class="card">
+        <h3>Contact</h3>
+        <div class="contacts">
+          <div class="contact-row"><strong>Phone:</strong>&nbsp;<span>8750 01808</span></div>
+          <div class="contact-row"><strong>Email:</strong>&nbsp;<span>bharani13r@gmail.com</span></div>
+          <a class="btn" href="mailto:bharani13r@gmail.com">Email Me</a>
+        </div>
 
-        <div class="section-title">Threats</div>
-        <p>Exam stress and inconsistent revision habits could reduce retention and performance; last-minute preparation may hurt long-term confidence.</p>
+        <hr>
+        <h4>Quick Bio</h4>
+        <p class="muted-text">A focused first-year BE student who prefers deep conceptual learning over rote memorization. He is building practical skills through small projects and structured practice in communication and presentation.</p>
+      </aside>
+    </section>
+
+    <section id="contact">
+      <div class="card contact-form">
+        <div class="contact-header">
+          <div>
+            <h3>Get in touch</h3>
+            <p class="muted-text">Reach out to discuss projects, mock interviews or collaboration.</p>
+          </div>
+        </div>
+
+        <form onsubmit="return handleSubmit(event)">
+          <input placeholder="Your name" required />
+          <input placeholder="Your email" required />
+          <textarea placeholder="Message" rows="4"></textarea>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send message</button>
+            <small class="muted-text">Or email directly: bharani13r@gmail.com</small>
+          </div>
+        </form>
       </div>
-    </div>
+    </section>
 
-    <div class="projects">
-      <div class="section-title">Highlighted projects (starter ideas)</div>
-      <div class="project-list">
-        <div class="project">
-          <h4>Mini Motor Lab</h4>
-          <p>Hands-on experiments to visualise motor starting, efficiency and speed control using simple setups.</p>
-        </div>
-        <div class="project">
-          <h4>Regenerative Drone Concept</h4>
-          <p>Prototype idea exploring energy recovery methods (regenerative braking & piezoelectric harvesting).</p>
-        </div>
-        <div class="project">
-          <h4>Portfolio Website</h4>
-          <p>This website — a clean, responsive single-page portfolio to present work and contact details.</p>
-        </div>
-      </div>
-    </div>
-
+    <footer>
+      © <span id="year"></span> R. Bharani — Portfolio • Designed for clarity and quick review
+    </footer>
   </div>
 
-  <aside class="card">
-    <h3>Contact</h3>
-    <div class="contacts">
-      <div class="contact-row"><strong>Phone:</strong>&nbsp;<span>8750 01808</span></div>
-      <div class="contact-row"><strong>Email:</strong>&nbsp;<span>bharani13r@gmail.com</span></div>
-      <a class="btn" href="mailto:bharani13r@gmail.com">Email Me</a>
-    </div>
-
-    <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:16px 0">
-    <h4>Quick Bio</h4>
-    <p style="color:var(--muted);font-size:14px;line-height:1.45">A focused first-year BE student who prefers deep conceptual learning over rote memorization. He is building practical skills through small projects and structured practice in communication and presentation.</p>
-
-  </aside>
-</section>
-
-<section id="contact">
-  <div class="card" style="margin-top:18px;display:flex;flex-direction:column;gap:12px">
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <div>
-        <h3 style="margin:0">Get in touch</h3>
-        <p style="margin:6px 0 0;color:var(--muted)">Reach out to discuss projects, mock interviews or collaboration.</p>
-      </div>
-    </div>
-
-    <form onsubmit="alert('This is a static demo. Email: bharani13r@gmail.com');return false;" style="display:flex;flex-direction:column;gap:8px">
-      <input placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
-      <input placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
-      <textarea placeholder="Message" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
-      <div style="display:flex;gap:8px;align-items:center">
-        <button class="btn" type="submit">Send message</button>
-        <small style="color:var(--muted)">Or email directly: bharani13r@gmail.com</small>
-      </div>
-    </form>
-  </div>
-</section>
-
-<footer>
-  © <span id="year"></span> R. Bharani — Portfolio • Designed for clarity and quick review
-</footer>
-
-  </div>  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script></body>
+  <script src="script.js"></script>
+</body>
 </html>
